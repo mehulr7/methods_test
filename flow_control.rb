@@ -49,6 +49,9 @@ withdraw_money(200)
 withdraw_money(500)
 withdraw_money(4)
 
+#In the following method the 'time' represents an arguement/parameter. This parameter can have any name what so ever.
+#However we have called it time so that it can make sense to the reader.
+
 def working_day(time)
   raise "The input is incorret for this method" unless time.kind_of?(Fixnum)
   
