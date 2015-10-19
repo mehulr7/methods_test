@@ -49,3 +49,30 @@ withdraw_money(200)
 withdraw_money(500)
 withdraw_money(4)
 
+def working_day(time)
+  raise "The input is incorret for this method" unless time.kind_of?(Fixnum)
+  
+  if time < 9 
+    puts "you are too early for work"
+  elsif time >= 9 && time <=12
+    puts "its the morning and you are at work"
+  elsif time >12 && time <= 13
+    puts "you are on a lunch break"
+  elsif time >13 && time <=17
+    puts "its the afternoon"
+  else
+    puts "its time to go home mehul dont stay too late"
+  end
+  
+end
+
+
+working_day(8)
+working_day(10)
+working_day(13)
+working_day(15)
+working_day(21)
+# working_day("mehul")#
+# working_day(13.45)
+# working_day(false)
+# working_day(true)
