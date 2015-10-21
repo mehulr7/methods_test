@@ -9,17 +9,42 @@ class Person
     @mouth = mouth
     @name = name
     @age = age
-    
   end
+  
+  ## getter
+#   def hands
+#     @hands
+#   end
+#
+#   #setter
+#   def hands=(input)
+#     @hands = input
+#   end
 end
 
 @mehul = Person.new(2, 2, 1, 2, 1, "mehul", 24)
 puts @mehul.hands
+@mehul.hands = 4
+puts @mehul.hands
+
 puts @mehul.legs
-puts @mehul.nose
+@mehul.legs = 3
+puts @mehul.legs
+
+@mehul.legs = 5
+puts @mehul.legs
+
+
+#puts @mehul.nose
 puts @mehul.eyes
-puts @mehul.mouth
-puts @mehul.name
+@mehul.eyes =3
+puts @mehul.eyes
+
+
+# puts @mehul.mouth
+# puts @mehul.name
+puts @mehul.age
+@mehul.age =5
 puts @mehul.age
 
 @cheta = Person.new(2, 2, 1, 2, 1, "cheta", 30)
